@@ -29,6 +29,12 @@ dependencies {
 	implementation("org.projectlombok:lombok:1.18.22")
 	//thymeleaf
 	implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
+	//webflux
+	implementation ("org.springframework.boot:spring-boot-starter-webflux")
+	annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
+	implementation("org.springframework.boot:spring-boot-starter-actuator")
+	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")

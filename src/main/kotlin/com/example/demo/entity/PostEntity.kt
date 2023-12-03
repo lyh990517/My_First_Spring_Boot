@@ -3,14 +3,12 @@ package com.example.demo.entity
 import jakarta.persistence.*
 import lombok.Getter
 import lombok.Setter
+import org.springframework.data.relational.core.mapping.Table
 
 @Entity
 @Table(name = "post")
 @Getter
-@Setter
 data class PostEntity(
-        @Id
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
         val id: Long = 0,
         val name: String,
         val age: Int
