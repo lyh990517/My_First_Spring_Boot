@@ -1,4 +1,4 @@
-package com.example.demo
+package com.example.demo.router
 
 import com.example.demo.handler.PostHandler
 import org.springframework.context.annotation.Bean
