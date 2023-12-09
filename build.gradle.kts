@@ -21,22 +21,16 @@ repositories {
 dependencies {
 	//maria db
 	runtimeOnly("org.mariadb.jdbc:mariadb-java-client")
-    //jpa
-	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-	//devtools
-	implementation("org.springframework.boot:spring-boot-devtools")
+	implementation("org.mariadb:r2dbc-mariadb:1.0.0")
+	implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
 	//lombok
 	implementation("org.projectlombok:lombok:1.18.22")
-	//thymeleaf
-	implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
 	//webflux
 	implementation ("org.springframework.boot:spring-boot-starter-webflux")
 	annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 
-	implementation("org.springframework.boot:spring-boot-starter-web")
-	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
